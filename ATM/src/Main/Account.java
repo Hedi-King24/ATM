@@ -40,6 +40,7 @@ class Account {
         System.out.println("Enter the amount you want to deposit: ");  
         amt = sc.nextLong();  
         balance = balance + amt;  
+	    System.out.println("Balance after diposit: " + balance); 
     }  
 
     public void withdraw() {  
@@ -48,7 +49,7 @@ class Account {
         amt = sc.nextLong();  
         if (balance >= amt) {  
             balance = balance - amt;  
-            System.out.println("Balance after withdrawal: " + balance);  
+            System.out.println("Balance after withdraw: " + balance);  
         } else {  
             System.out.println("Your balance is less than " + amt + "\tTransaction failed...!!" );  
         }  
